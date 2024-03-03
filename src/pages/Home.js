@@ -12,7 +12,7 @@ const Home = () => {
   const filteredProducts = products.filter(item => {
     return item.category === "women's clothing" || item.category === "men's clothing"
   })
-  console.log(filteredProducts)
+  
   return (
     <div>
       <section className='py-16'>

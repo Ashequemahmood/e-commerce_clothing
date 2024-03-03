@@ -4,9 +4,14 @@ import { Link } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
 import { FiTrash2 } from "react-icons/fi";
 import CartItem from "../components/CartItem";
+// import cart context
+import { CartContext } from "../contexts/CartContext";
 
 const Sidebar = () => {
+  
   const { isOpen, handleClose } = useContext(SidebarContext);
+  console.log(useContext(CartContext))
+
   return (
     <div className={`${
       isOpen?'right-0': '-right-full'
